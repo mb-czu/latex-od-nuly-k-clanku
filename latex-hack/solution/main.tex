@@ -3,6 +3,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{csquotes}
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{references.bib}
 
 \title{Exploring the Universe: From Stars to Black Holes}
 \author{Matej Brnka}
@@ -16,9 +18,11 @@ This paper provides an introductory overview of the universe, focusing on stars,
 \end{abstract}
 
 \input{chapters/introduction}
-\input{chapters/introduction}
 \input{chapters/stars-and-galaxies}
 \input{chapters/black-holes}
 \input{chapters/observations}
 \input{chapters/conclusion}
+
+\printbibliography
+
 \end{document}
