@@ -1,7 +1,7 @@
 # Krok 1: Instalace LaTeXu (Windows – TeX Live)
 
 > [!NOTE]
-> [Zpět na přehled](/instalace-latex/01-instalace.md)
+> [Zpět na přehled](../02-instalace.md)
 > 
 🎯 Cíl etapy: Mít na Windows funkční LaTeX včetně angličtiny, češtiny, citací (biblatex, biber) a nástroje latexmk, aby bylo možné vytvářet PDF dokumenty přímo z VS Code.
 
@@ -60,9 +60,9 @@ Tato varianta instaluje pouze konkrétní balíčky potřebné pro základní pr
 
 Použijeme stejné balíčky jako na macOS.
 
-`tlmgr install latexmk biber biblatex csquotes babel hyphen-english lm graphics hyperref microtype cleveref booktabs geometry biblatex-ieee biblatex-iso690`
+`tlmgr install latexmk biber biblatex csquotes babel hyphen-english lm graphics hyperref microtype cleveref booktabs geometry biblatex-ieee biblatex-iso690 biblatex-apa siunitx amsmath todonotes float`
 
-Další balíčky je možné průběžně instalovat podle toho, jaké knihovny dokument používá.
+Příkaz zahrnuje i balíčky pro navazující LaTeX Hack. Další balíčky doplň podle vlastního dokumentu.
 
 ## 1f) Instalace kolekcí balíčků – varianta 2 (doporučeno)
 

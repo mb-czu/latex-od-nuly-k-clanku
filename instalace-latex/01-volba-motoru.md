@@ -3,24 +3,24 @@
 > [!NOTE]
 > [Zpět na instalační manuál](README.MD)
 
-LaTeX má tři motory, které ze souboru `.tex` vyrábějí PDF. Liší se hlavně rychlostí a tím, jaká písma umí použít. Nejrozšířenější je pdfLaTeX (výchozí v Overleafu, arXivu i šablonách časopisů), LuaLaTeX je jeho doporučený nástupce.
+V LaTeXu se běžně používají tři motory pro vytvoření PDF. Liší se hlavně prací s písmy a typografickými možnostmi. Pro tento kurz používáme pdfLaTeX; LuaLaTeX je alternativou například pro systémová písma. U časopisu nebo archivu se řiď požadavky konkrétní šablony.
 
 > [!IMPORTANT]
 > V našem projektu budeme využívat především pdfLaTeX. Případná změna na LuaLaTeX je popsána v tomto [souboru](/dalsi-tipy/přechod-z-pdfLaTeX-naLuaLaTeX.md)
 
 | Kritérium                                                    | **pdfLaTeX**             | **XeLaTeX**         | **LuaLaTeX**                    |
 | ------------------------------------------------------------ | ------------------------ | ------------------- | ------------------------------- |
-| Rychlost                                                     | nejrychlejší          | střední             | nejpomalejší (hlavně první běh) |
+| Rychlost                                                     | obvykle rychlý       | závisí na dokumentu | první běh může být pomalejší |
 | Systémová písma (Times, Calibri, .otf/.ttf)                  | ne, jen písma LaTeXu  | ano (`fontspec`) | ano (`fontspec`)             |
 | Čeština                                                      |  ano (`fontenc` T1)    |  ano, nativně     | ano, nativně                 |
 | Šablony časopisů (Elsevier, IEEE, Springer…) a arXiv fungují |  počítají s ním        | obvykle fungují  |  obvykle                      |
-| Budoucnost                                                   | stabilní, už se nevyvíjí | vývoj stagnuje      | doporučený nástupce             |
+| Zaměření                                                     | tradiční sazba a běžné šablony | systémová písma | systémová písma a rozšíření pomocí Lua |
 
 ### Výhody a nevýhody
 
 **pdfLaTeX**
 
-- ✅ Nejrychlejší a nejspolehlivější, funguje s ním každý balíček i šablona časopisu.
+- ✅ Rychlý pro běžné dokumenty, široce podporovaný šablonami; některé balíčky vyžadují jiný motor.
 - ✅ Nejvíc návodů a odpovědí na internetu.
 - ❌ Nemůže použít písma nainstalovaná v počítači, jen písma dodávaná s LaTeXem.
 - ❌ Nepodporuje balíček `fontspec`.
@@ -28,10 +28,10 @@ LaTeX má tři motory, které ze souboru `.tex` vyrábějí PDF. Liší se hlavn
 **XeLaTeX**
 
 - ✅ Umí systémová písma a exotická písma (arabština, čínština…).
-- ❌ Pomalejší, vývoj stagnuje, některé typografické funkce (`microtype`) umí jen částečně.
+- ❌ Některé typografické funkce (`microtype`) umí jen částečně.
 
 **LuaLaTeX**
 
 - ✅ Moderní nástupce pdfLaTeXu: systémová písma plus plná typografie.
-- ❌ Nejpomalejší, první spuštění trvá dlouho (vytváří se mezipaměť písem).
+- ❌ První spuštění může trvat déle kvůli vytváření mezipaměti písem.
 - ❌ Občas nefunguje se starším balíčkem.

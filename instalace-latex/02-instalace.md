@@ -3,7 +3,7 @@
 > [!NOTE]
 > [Zpět na instalační manuál](README.MD)
 
-Na macOS i Windows existuje několik možností instalace LaTeXu. Vyber si svou možnost dle operačního systému, dostpné kapacity atp.
+Na macOS i Windows existuje několik možností instalace LaTeXu. Vyber si svou možnost dle operačního systému, dostupné kapacity atp.
 
 
 | OS      | Distribuce                                                   | Doporučení                                   |

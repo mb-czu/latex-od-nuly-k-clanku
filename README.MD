@@ -6,7 +6,7 @@ Návody jsou určené především začátečníkům na macOS a Windows. Zadán�
 
 ## Kde začít a instalace LaTeX
 
-Pokud s LaTeXem začínáš, postupuj podle [následujícího pořadí](./instalace-latex/README.MD). Máš-li už funkční prostředí a zvládáš jednoduchý dokument s citacemi, přejdi rovnou na LaTex Hack. //TODO Sem přidat odkaz
+Pokud s LaTeXem začínáš, postupuj podle [následujícího pořadí](./instalace-latex/README.MD). Máš-li už funkční prostředí a zvládáš jednoduchý dokument s citacemi, přejdi rovnou na [LaTeX Hack](./latex-hack/README.MD).
 
 ## Co budeš využívat
 
@@ -21,9 +21,9 @@ Instalaci a nastavení projdi podle odkazů výše. U bibliografie opravuj metad
 
 V deseti praktických úkolech vytvoříš výukový článek **Exploring the Universe: From Stars to Black Holes**. Každá Challenge obsahuje scénář, cíle, konkrétní zadání, nápovědu a kontrolní seznam.
 
-Postupně si vyzkoušíš strukturu projektu, formátování textu, citace, obrázky, tabulky, matematiku, křížové odkazy a závěrečnou přípravu článku. Všechny úkoly rozšiřují **jeden pracovní projekt** ve složce /TODO Doplnit odkaz na složku.
+Postupně si vyzkoušíš strukturu projektu, formátování textu, citace, obrázky, tabulky, matematiku, křížové odkazy a závěrečnou přípravu článku. Všechny úkoly rozšiřují **jeden pracovní projekt** ve vlastní složce `latex-hack/project/`, kterou vytvoříš v [prvním úkolu](./latex-hack/challenges/01-struktura-projektu.md).
 
-Začni //TODO Doplnit odkaz. Do kompletního referenčního řešení /TODO Doplnit odkaz nahlížej pro porovnání; obsahuje i úpravy z pozdějších úkolů.
+Začni s [představením celého projektu](./latex-hack/README.MD). Do kompletního [referenčního řešení](./latex-hack/solution/) nahlížej pro porovnání; obsahuje i úpravy z pozdějších úkolů.
 
 ## Jak vytvářet a kontrolovat výstupy
 
@@ -34,7 +34,7 @@ Po každé Challenge ulož změny, vytvoř oba formáty a oba osobně otevři:
 3. **Kontrola:** Porovnej úplnost textu, citace, obrázky, tabulky, rovnice a odkazy. Teprve po kontrole pokračuj dalším úkolem.
 
 > [!IMPORTANT]
-> PDF a Word používají odlišné způsoby sazby. Přímý export Pandocem nezaručuje shodné stránkování ani úplný převod číslování rovnic, popisků a křížových odkazů. Tyto prvky ve Wordu podle zadání zkontroluj a případně ručně dokonči. Podrobnosti a příkazy pro jednotlivé etapy najdeš v návodu sestavení a exportu //TODO Doplnit odkaz.
+> PDF a Word používají odlišné způsoby sazby. Přímý export Pandocem nezaručuje shodné stránkování ani úplný převod číslování rovnic, popisků a křížových odkazů. Tyto prvky ve Wordu podle zadání zkontroluj a případně ručně dokonči. Podrobnosti a příkazy pro jednotlivé etapy najdeš v [návodu sestavení a exportu](./latex-hack/přílohy/BUILD.md).
 
 Úvodní dokument používá citační styl IEEE, LaTeX Hack standardně APA. Při exportu vybírej odpovídající soubor CSL podle konkrétního zadání.
 
@@ -43,20 +43,19 @@ Po každé Challenge ulož změny, vytvoř oba formáty a oba osobně otevři:
 ```text
 .
 ├── README.MD            # úvod a doporučený postup
-├── docs/                # instalace, nastavení a základní návody
-├── first-document/      # první ukázkový dokument s bibliografií
+├── instalace-latex/     # instalace, nastavení a základní návody
+│   └── prvni-dokument/  # první ukázkový dokument s bibliografií
+├── dalsi-tipy/          # doplňující návody
 └── latex-hack/
     ├── README.MD        # přehled všech Challenges
     ├── challenges/      # 10 navazujících zadání
-    ├── project/         # tvoje pracovní složka
+    ├── checkpoints/     # dílčí řešení 01–09
+    ├── project/         # pracovní složka; vytvoříš v úkolu 01
     ├── solution/        # finální referenční zdroje
-    ├── styles/          # citační styly CSL pro Word
-    ├── BUILD.md         # sestavení PDF, export a kontrola Wordu
-    ├── ZDROJE.md        # publikace a identifikátory pro Zotero
-    └── DILCI-RESENI.md   # návrh publikování průběžných řešení
+    └── přílohy/         # BUILD.md, ZDROJE.MD, styles/ a obrazky/
 ```
 
-Původní publikace pro cvičení, jejich ISBN/DOI a citační klíče najdeš v [seznamu zdrojů](latex-hack/ZDROJE.md). 
+Původní publikace pro cvičení, jejich ISBN/DOI a citační klíče najdeš v [seznamu zdrojů](latex-hack/přílohy/ZDROJE.MD).
 
 > [!WARNING]
 > Veškeré materiály v rámci LaTeX Hacku slouží výhradně k výukovým účelům. Uvedené odborné texty, číselné údaje, tabulky a ilustrace mají především demonstrační charakter a nemusí odpovídat aktuálním vědeckým poznatkům či přesným naměřeným hodnotám. Materiály proto nepovažujte za ověřený vědecký zdroj a nepoužívejte je jako podklad pro odborné závěry bez dalšího ověření.

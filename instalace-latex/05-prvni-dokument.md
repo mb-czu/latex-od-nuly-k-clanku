@@ -3,12 +3,12 @@
 > [!NOTE]
 > [Zpět na instalační manuál](README.MD)
 
-🎯 Cíl etapy: Vytvořit první LateX článek s jednou sekcí a citacemi dle vyexportovaného souboru. Zkus sestavit článek z této [složky](/instalace-latex/prvni-dokument/) a ověř, že výsledné PDF odpovídá, případně si vytvoř svůj dle návodu níže.
+🎯 Cíl etapy: Vytvořit první LaTeX článek s jednou sekcí a citacemi dle vyexportovaného souboru. Zkus sestavit článek z této [složky](/instalace-latex/prvni-dokument/) a ověř, že výsledné PDF odpovídá, případně si vytvoř svůj dle návodu níže.
 
-## 4a) Struktura složky
-Vytvoření složky, ve které se bude nacházet zdrojový soubor main.tex a ve stejné složce bude umístěn soubor (exportovaný ze Zotero dle XYZ) references.bib.
+## 5a) Struktura složky
+Vytvoření složky, ve které se bude nacházet zdrojový soubor main.tex a ve stejné složce bude umístěn soubor (exportovaný ze Zotera podle [kroku 3](03-zotero-better-bibtex.md)) references.bib.
 
-## 4b) Rozbor souboru `main.tex`
+## 5b) Rozbor souboru `main.tex`
 
 ### 1. Preambule (vše před `\begin{document}`)
 
@@ -43,7 +43,7 @@ Vytvoření složky, ve které se bude nacházet zdrojový soubor main.tex a ve 
 Vše za `%` až do konce řádku je komentář a do PDF se nedostane.
 Samotný znak procenta napíšeš jako `\%`.
 
-## 4c) Rozbor souboru `references.bib`
+## 5c) Rozbor souboru `references.bib`
 
 Ukázkový záznam pro citaci v článku:
 

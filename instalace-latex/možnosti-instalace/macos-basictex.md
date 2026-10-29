@@ -1,12 +1,15 @@
 # Krok 1: Instalace LaTeXu (BasicTeX)
 
 > [!NOTE]
-> [Zpět na přehled](/instalace-latex/01-instalace.md)
+> [Zpět na přehled](../02-instalace.md)
 
 
 🎯 Cíl etapy: Mít na Macu kompletní LaTeX včetně češtiny, citací (biblatex, biber) a nástroje latexmk, aby šlo vyrobit PDF. Biblatex určuje, jak citace a seznam literatury v dokumentu vypadají, a biber je program, který načte zdroje ze Zotera (soubor .bib), seřadí je a předá biblatexu k vysázení.
 
 ## 1a) Instalace
+
+Příkaz níže předpokládá nainstalovaný [Homebrew](https://brew.sh/); alternativou je [oficiální instalátor BasicTeXu](https://www.tug.org/mactex/morepackages.html).
+
 `brew install --cask basictex`
 
 ## 1b) Načtení cest
@@ -23,7 +26,7 @@ tlmgr --version
 `sudo tlmgr update --self`
 
 ## 1e) Instalace balíčků - varianta 1
-Je třeba nainstalovat balíčky, které následně budeme v rámci LateX souboru využávat v rámci `\usepackage{}`
+Je třeba nainstalovat balíčky, které následně budeme v rámci LaTeX souboru využávat v rámci `\usepackage{}`
 
 | Balíček         | Popis a využití                                                                                                        |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -43,11 +46,11 @@ Je třeba nainstalovat balíčky, které následně budeme v rámci LateX soubor
 | biblatex-ieee   | Citační balíček IEEE.                                                                                                  |
 | biblatex-iso690 | Citační balíček ISO-690.                                                                                               |
 
-Případně je třeba instalovat další balíčky dle využívaných knihoven.
+Příkaz níže zahrnuje také balíčky pro navazující LaTeX Hack (`biblatex-apa`, `siunitx`, `amsmath`, `todonotes`, `float`). Další balíčky doplň podle vlastního dokumentu.
 
-Instalace všech balíčků jením příkazem `sudo tlmgr install latexmk biber biblatex csquotes babel hyphen-english lm graphics hyperref microtype cleveref booktabs geometry biblatex-ieee biblatex-iso690`
+Instalace všech balíčků jedním příkazem `sudo tlmgr install latexmk biber biblatex csquotes babel hyphen-english lm graphics hyperref microtype cleveref booktabs geometry biblatex-ieee biblatex-iso690 biblatex-apa siunitx amsmath todonotes float`
 
-## 1e) Instalace knihoven baláčků - varianta 2 (doporučeno)
+## 1f) Instalace kolekcí balíčků - varianta 2 (doporučeno)
 | Kolekce / balíček           | Co přinese                                                                                                    |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | collection-latexrecommended | základ pro články: geometry, microtype, booktabs, caption, xcolor, float, fontspec, setspace                  |
