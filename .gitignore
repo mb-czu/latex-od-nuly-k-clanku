@@ -1,0 +1,13 @@
+.DS_Store
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.log
+*.bcf
+*.fdb_latexmk
+*.out
+*.xml
+*.gz
+build
