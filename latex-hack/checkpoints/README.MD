@@ -19,3 +19,6 @@
 
 ## Řešení 07
 [Řešení](/latex-hack/checkpoints/07/)
+
+## Řešení 08
+[Řešení](/latex-hack/checkpoints/08/)
