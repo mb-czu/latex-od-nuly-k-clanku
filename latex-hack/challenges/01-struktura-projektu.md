@@ -101,14 +101,14 @@ project/
 
 ## Nápověda
 
-| Soubor nebo adresář | K čemu slouží |
-|---|---|
-| `main.tex` | Hlavní soubor, ze kterého se sestavuje výsledný dokument. |
-| `references.bib` | Databáze bibliografických záznamů. |
-| `chapters/` | Obsah jednotlivých kapitol článku. |
-| `figures/images/` | Obrázky používané v dokumentu. |
-| `figures/definitions/` | Zdrojové soubory diagramů a dalších ilustrací. |
-| `tables/` | Tabulky uložené v samostatných souborech. |
+| Soubor nebo adresář    | K čemu slouží                                             |
+| ---------------------- | --------------------------------------------------------- |
+| `main.tex`             | Hlavní soubor, ze kterého se sestavuje výsledný dokument. |
+| `references.bib`       | Databáze bibliografických záznamů.                        |
+| `chapters/`            | Obsah jednotlivých kapitol článku.                        |
+| `figures/images/`      | Obrázky používané v dokumentu.                            |
+| `figures/definitions/` | Zdrojové soubory diagramů a dalších ilustrací.            |
+| `tables/`              | Tabulky uložené v samostatných souborech.                 |
 
 V dalších Challenges se naučíš jednotlivé soubory propojit pomocí příkazu `\input`, takže výsledný článek bude možné sestavit z více samostatných částí.
 
@@ -121,7 +121,7 @@ V dalších Challenges se naučíš jednotlivé soubory propojit pomocí příka
 pandoc main.tex --from=latex --number-sections -o build/main.docx
 ```
 
-3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
+3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../přílohy/BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
 
 ## Kontrola výsledku
 
@@ -138,6 +138,6 @@ Challenge je dokončený, pokud:
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Dílčí řešení úkolů 01–09 najdeš v [checkpointech](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)

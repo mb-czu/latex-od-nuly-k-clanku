@@ -48,11 +48,11 @@ V souboru `chapters/introduction.tex` ponech pouze samotnou sekci a její text. 
 
 LaTeX nabízí dva základní příkazy pro načítání obsahu z externích souborů.
 
-| Vlastnost                                  | `\input`               | `\include`                                  |
-| ------------------------------------------ | ---------------------- | ------------------------------------------- |
-| Načtení externího souboru                  | Ano                    | Ano                                         |
-| Automatické zalomení stránky               | Ne                     | Ano, před i za vloženým obsahem             |
-| Typické použití                            | Články, sekce, tabulky | Knihy, diplomové práce a rozsáhlé dokumenty |
+| Vlastnost                    | `\input`               | `\include`                                  |
+| ---------------------------- | ---------------------- | ------------------------------------------- |
+| Načtení externího souboru    | Ano                    | Ano                                         |
+| Automatické zalomení stránky | Ne                     | Ano, před i za vloženým obsahem             |
+| Typické použití              | Články, sekce, tabulky | Knihy, diplomové práce a rozsáhlé dokumenty |
 
 **Praktický experiment:**
 
@@ -247,7 +247,7 @@ Tím bude mít článek základní obsah, který v následujících Challenges r
 pandoc main.tex --from=latex --number-sections -o build/main.docx
 ```
 
-3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
+3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../přílohy/BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
 
 ## Kontrola výsledku
 
@@ -268,6 +268,6 @@ Challenge je dokončený, pokud:
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Dílčí řešení úkolů 01–09 najdeš v [checkpointech](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)

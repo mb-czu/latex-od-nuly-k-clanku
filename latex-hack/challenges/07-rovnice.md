@@ -72,12 +72,12 @@ Samostatné nečíslované rovnice se zapisují pomocí `\[...\]`. Na rozdíl od
 
 Stejný matematický vztah lze vysázet několika způsoby:
 
-| Zápis | Výsledek a použití |
-|---|---|
-| `$E = mc^2$` | Matematika uvnitř běžného odstavce, bez čísla rovnice. |
-| `\[E = mc^2\]` | Samostatná nečíslovaná rovnice. |
-| `\begin{equation} ... \end{equation}` | Samostatná automaticky číslovaná rovnice. |
-| `\begin{align} ... \end{align}` | Více řádků, které lze zarovnat; standardně čísluje jednotlivé řádky. |
+| Zápis                                 | Výsledek a použití                                                   |
+| ------------------------------------- | -------------------------------------------------------------------- |
+| `$E = mc^2$`                          | Matematika uvnitř běžného odstavce, bez čísla rovnice.               |
+| `\[E = mc^2\]`                        | Samostatná nečíslovaná rovnice.                                      |
+| `\begin{equation} ... \end{equation}` | Samostatná automaticky číslovaná rovnice.                            |
+| `\begin{align} ... \end{align}`       | Více řádků, které lze zarovnat; standardně čísluje jednotlivé řádky. |
 
 **Experiment:** Za právě vloženou rovnici v `chapters/black-holes.tex` dočasně vyzkoušej čtyři varianty. Porovnej PDF a poté všechny experimentální varianty odstraň; vztah pro Schwarzschildův poloměr z úkolu 3 zůstane jednou.
 
@@ -115,18 +115,18 @@ The wavelength $\lambda$ and frequency $\nu$ of
 
 Vyzkoušej si také následující příkazy:
 
-| Příkaz | Význam |
-|---|---|
-| `\alpha`, `\beta`, `\gamma` | Malá řecká písmena. |
-| `\Delta`, `\Omega` | Velká řecká písmena. |
-| `\lambda`, `\nu` | Vlnová délka a frekvence. |
-| `\times`, `\cdot` | Násobení. |
-| `\leq`, `\geq` | Menší nebo rovno; větší nebo rovno. |
-| `\approx`, `\neq` | Přibližně rovno; nerovná se. |
-| `\infty` | Nekonečno. |
-| `\sqrt{x}` | Druhá odmocnina. |
-| `x_{max}` | Dolní index složený z více znaků. |
-| `x^{n+1}` | Horní index složený z více znaků. |
+| Příkaz                      | Význam                              |
+| --------------------------- | ----------------------------------- |
+| `\alpha`, `\beta`, `\gamma` | Malá řecká písmena.                 |
+| `\Delta`, `\Omega`          | Velká řecká písmena.                |
+| `\lambda`, `\nu`            | Vlnová délka a frekvence.           |
+| `\times`, `\cdot`           | Násobení.                           |
+| `\leq`, `\geq`              | Menší nebo rovno; větší nebo rovno. |
+| `\approx`, `\neq`           | Přibližně rovno; nerovná se.        |
+| `\infty`                    | Nekonečno.                          |
+| `\sqrt{x}`                  | Druhá odmocnina.                    |
+| `x_{max}`                   | Dolní index složený z více znaků.   |
+| `x^{n+1}`                   | Horní index složený z více znaků.   |
 
 **Pozor:** Příkazy pro matematické symboly zapisuj uvnitř matematického režimu, například `$\lambda$`, nikoliv přímo do běžného textu.
 
@@ -208,21 +208,21 @@ V Challenge 08 se naučíš na tyto rovnice odkazovat pomocí `\ref`, `\eqref` a
 
 ## Nápověda
 
-| Příkaz nebo prostředí | K čemu slouží |
-|---|---|
-| `$...$` | Matematický výraz přímo v textu. |
-| `\[...\]` | Samostatný nečíslovaný matematický výraz. |
-| `equation` | Samostatná číslovaná rovnice. |
-| `equation*` | Samostatná nečíslovaná rovnice. |
-| `align` | Zarovnání více matematických řádků s možností číslování. |
-| `align*` | Zarovnání více řádků bez číslování. |
-| `\frac{a}{b}` | Zlomek. |
-| `x^2`, `x^{n+1}` | Mocnina. |
-| `r_s`, `r_{max}` | Dolní index. |
-| `\sqrt{x}` | Odmocnina. |
-| `\text{...}` | Běžný text uvnitř matematického režimu. |
-| `\notag` | Potlačí číslo jednoho řádku v `align`. |
-| `\label{eq:...}` | Identifikátor rovnice pro křížové odkazy. |
+| Příkaz nebo prostředí | K čemu slouží                                            |
+| --------------------- | -------------------------------------------------------- |
+| `$...$`               | Matematický výraz přímo v textu.                         |
+| `\[...\]`             | Samostatný nečíslovaný matematický výraz.                |
+| `equation`            | Samostatná číslovaná rovnice.                            |
+| `equation*`           | Samostatná nečíslovaná rovnice.                          |
+| `align`               | Zarovnání více matematických řádků s možností číslování. |
+| `align*`              | Zarovnání více řádků bez číslování.                      |
+| `\frac{a}{b}`         | Zlomek.                                                  |
+| `x^2`, `x^{n+1}`      | Mocnina.                                                 |
+| `r_s`, `r_{max}`      | Dolní index.                                             |
+| `\sqrt{x}`            | Odmocnina.                                               |
+| `\text{...}`          | Běžný text uvnitř matematického režimu.                  |
+| `\notag`              | Potlačí číslo jednoho řádku v `align`.                   |
+| `\label{eq:...}`      | Identifikátor rovnice pro křížové odkazy.                |
 
 ## Sestavení do PDF a Wordu
 
@@ -233,7 +233,7 @@ V Challenge 08 se naučíš na tyto rovnice odkazovat pomocí `\ref`, `\eqref` a
 pandoc main.tex --from=latex --number-sections -o build/main.docx --citeproc --bibliography=references.bib --csl=styles/apa.csl
 ```
 
-3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
+3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../přílohy/BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
 
 ## Kontrola výsledku
 
@@ -254,6 +254,6 @@ Challenge je dokončený, pokud:
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Dílčí řešení úkolů 01–09 najdeš v [checkpointech](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)

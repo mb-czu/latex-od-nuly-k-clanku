@@ -24,7 +24,7 @@ Po dokončení Challenge budeš umět:
 
 Pokračuj v projektu z Challenge 04. Dokument má hlavní soubor `main.tex`, kapitoly v `chapters/` a funkční bibliografii.
 
-Zkopíruj soubory `galaxy-types.png` a `black-hole-diagram.png` z `latex-hack/přílohy/figures/obrazky/` do `project/figures/images/`. Obsah řešení přitom nekopíruj. Obrázky v `attachments/` mají jiné názvy a nejsou vstupem těchto ukázek.
+Zkopíruj soubory `galaxy-types.jpg` a `black-hole-diagram.jpg` z [`latex-hack/přílohy/obrazky/`](../přílohy/obrazky/) do `project/figures/images/`. Obsah řešení přitom nekopíruj.
 
 > Vždy pokračuj ve vlastním `project/`; `solution/` slouží ke srovnání.
 
@@ -46,7 +46,7 @@ project/
 │   └── conclusion.tex
 └── figures/
     ├── images/
-    │   └── galaxy-types.png
+    │   └── galaxy-types.jpg
     └── definitions/
 ```
 
@@ -69,7 +69,7 @@ Otevři `chapters/stars-and-galaxies.tex`. V podsekci *Types of Galaxies* bezpro
 ```latex
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/images/galaxy-types.png}
+    \includegraphics[width=0.8\textwidth]{figures/images/galaxy-types.jpg}
     \caption{Schematic illustration of three galaxy types.}
     \label{fig:galaxy-types}
 \end{figure}
@@ -84,15 +84,15 @@ Zkompiluj dokument přes **LaTeX Workshop** a ověř, že se obrázek zobrazí s
 Postupně vyzkoušej tyto varianty:
 
 ```latex
-\includegraphics[width=0.5\textwidth]{figures/images/galaxy-types.png}
+\includegraphics[width=0.5\textwidth]{figures/images/galaxy-types.jpg}
 ```
 
 ```latex
-\includegraphics[width=\textwidth]{figures/images/galaxy-types.png}
+\includegraphics[width=\textwidth]{figures/images/galaxy-types.jpg}
 ```
 
 ```latex
-\includegraphics[width=8cm]{figures/images/galaxy-types.png}
+\includegraphics[width=8cm]{figures/images/galaxy-types.jpg}
 ```
 
 Porovnej výsledné PDF. Nakonec se vrať k `width=0.8\textwidth`.
@@ -104,7 +104,7 @@ Při zadání pouze šířky zachovává LaTeX poměr stran obrázku. Pokud pot�
     width=\textwidth,
     height=6cm,
     keepaspectratio
-]{figures/images/galaxy-types.png}
+]{figures/images/galaxy-types.jpg}
 ```
 
 ### Úkol 5: Experimentuj s umístěním obrázku
@@ -113,13 +113,13 @@ Prostředí `figure` vytváří **plovoucí objekt**. LaTeX proto může obráze
 
 Vyzkoušej postupně volby `[h]`, `[t]`, `[b]` a `[p]` a sleduj změny ve výsledném PDF.
 
-| Volba | Význam |
-|---|---|
-| `h` | Pokusí se obrázek umístit přibližně na aktuální místo (*here*). |
-| `t` | Umožní umístění v horní části stránky (*top*). |
-| `b` | Umožní umístění ve spodní části stránky (*bottom*). |
-| `p` | Umožní umístění na samostatné stránce plovoucích objektů (*page*). |
-| `!` | Uvolňuje některá interní omezení pro umisťování plovoucích objektů. |
+| Volba | Význam                                                              |
+| ----- | ------------------------------------------------------------------- |
+| `h`   | Pokusí se obrázek umístit přibližně na aktuální místo (*here*).     |
+| `t`   | Umožní umístění v horní části stránky (*top*).                      |
+| `b`   | Umožní umístění ve spodní části stránky (*bottom*).                 |
+| `p`   | Umožní umístění na samostatné stránce plovoucích objektů (*page*).  |
+| `!`   | Uvolňuje některá interní omezení pro umisťování plovoucích objektů. |
 
 #### Kombinování parametrů
 
@@ -127,13 +127,13 @@ Parametry můžeme libovolně kombinovat. Neurčují však pořadí, ve kterém 
 
 **Například:**
 
-|Zápis| Chování|
-|-----|--------|
-|[h]| Pokusí se umístit obrázek na aktuální místo. Pokud to není možné, LaTeX může tuto volbu automaticky rozšířit na [ht].|
-|[ht]|Povoluje aktuální místo nebo horní část stránky.|
-|[htb]|Povoluje aktuální místo, horní nebo spodní část stránky.|
-|[htbp]|Povoluje všechny čtyři základní možnosti umístění.|
-|[!htbp]|Stejné možnosti jako [htbp], ale s uvolněním některých omezení pro umístění.|
+| Zápis   | Chování                                                                                                               |
+| ------- | --------------------------------------------------------------------------------------------------------------------- |
+| [h]     | Pokusí se umístit obrázek na aktuální místo. Pokud to není možné, LaTeX může tuto volbu automaticky rozšířit na [ht]. |
+| [ht]    | Povoluje aktuální místo nebo horní část stránky.                                                                      |
+| [htb]   | Povoluje aktuální místo, horní nebo spodní část stránky.                                                              |
+| [htbp]  | Povoluje všechny čtyři základní možnosti umístění.                                                                    |
+| [!htbp] | Stejné možnosti jako [htbp], ale s uvolněním některých omezení pro umístění.                                          |
 
 Důležité: Zápis [htbp] neznamená „nejprve zkus h, potom t, následně b a nakonec p“. LaTeX používá vlastní algoritmus pro umisťování plovoucích objektů a rozhoduje také podle dostupného místa a nastavených pravidel sazby.
 
@@ -159,13 +159,13 @@ Všimni si, že číslo obrázku nevypisuješ ručně. LaTeX jej generuje automa
 
 ### Úkol 7: Přidej druhý obrázek
 
-V souboru `chapters/black-holes.tex` v podsekci *Event Horizons* za odstavec s citací `eventhorizon2019` vlož druhý přiložený obrázek `black-hole-diagram.png`:
+V souboru `chapters/black-holes.tex` v podsekci *Event Horizons* za odstavec s citací `eventhorizon2019` vlož druhý přiložený obrázek `black-hole-diagram.jpg`:
 
 ```latex
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{figures/images/black-hole-diagram.png}
-    \caption{Simplified schematic of a black hole and its event horizon.}
+    \includegraphics[width=0.75\textwidth]{figures/images/black-hole-diagram.jpg}
+    \caption{Simplified schematic of a black hole and its event horizon. Source: Maria Hammerstrøm, SNL (CC BY-NC-SA 3.0). Norwegian labels: singularity, event horizon, Schwarzschild radius.}
     \label{fig:black-hole}
 \end{figure}
 ```
@@ -178,11 +178,11 @@ Ověř, že oba obrázky mají odlišné číslo, popisek a identifikátor.
 
 Při práci s pdfLaTeXem se nejčastěji používají tyto formáty:
 
-| Formát | Typické použití | Charakteristika |
-|---|---|---|
-| PNG | Schémata, snímky obrazovky, grafika | Rastrový formát, bezeztrátová komprese. |
-| JPG/JPEG | Fotografie | Rastrový formát, obvykle menší soubory díky ztrátové kompresi. |
-| PDF | Grafy, diagramy, vektorové ilustrace | Může zachovat vektorovou grafiku a ostré linie při zvětšení. |
+| Formát   | Typické použití                      | Charakteristika                                                |
+| -------- | ------------------------------------ | -------------------------------------------------------------- |
+| PNG      | Schémata, snímky obrazovky, grafika  | Rastrový formát, bezeztrátová komprese.                        |
+| JPG/JPEG | Fotografie                           | Rastrový formát, obvykle menší soubory díky ztrátové kompresi. |
+| PDF      | Grafy, diagramy, vektorové ilustrace | Může zachovat vektorovou grafiku a ostré linie při zvětšení.   |
 
 Pro společný výstup do PDF a DOCX zde používej PNG/JPEG. Vektorové PDF je vhodné pro LaTeX, ale pro Word je předem připrav jako PNG.
 
@@ -199,7 +199,7 @@ U vědeckých obrázků si vždy zaznamenej:
 - licenci nebo podmínky použití,
 - informaci, zda jde o převzatý nebo upravený obrázek.
 
-Obrázky zde používáme jako výukové ilustrace. Jejich původní autor ani licence nejsou v repozitáři doloženi; nelze tedy tvrdit, že jde o vlastní nově vytvořená schémata. Před veřejným šířením je nahraď vlastním schématem nebo obrázkem s doloženým původem. Stav podkladů je uveden v [seznamu zdrojů](../ZDROJE.md).
+Obrázky zde používáme jako výukové ilustrace. U schématu černé díry zachovej kredit a licenci uvedené v popisku; překlad norských označení je jeho součástí. U diagramu galaxií ještě ověř podmínky dalšího šíření, případně jej nahraď obrázkem s doloženým původem. Podrobnosti jsou v [seznamu zdrojů](../přílohy/ZDROJE.MD).
 
 Pokud obrázek nahrazuješ převzatým materiálem, přidej jeho skutečný zdroj do Zotera už nyní; v `\caption` za věcný popis připoj požadovaný kredit a citaci. Astronomický článek EHT automaticky není zdrojem přiloženého schématu.
 
@@ -207,15 +207,15 @@ V DOCX zkontroluj oba obrázky a věcné popisky. Automatická čísla z PDF se 
 
 ## Nápověda
 
-| Příkaz / prostředí | K čemu slouží |
-|---|---|
-| `\usepackage{graphicx}` | Načte podporu pro vkládání obrázků. |
-| `\includegraphics{...}` | Vloží obrázek. |
-| `width=0.8\textwidth` | Nastaví šířku na 80 % šířky textu. |
-| `\begin{figure}[htbp]` | Vytvoří plovoucí objekt s preferencemi umístění. |
-| `\centering` | Vystředí obsah obrázku. |
-| `\caption{...}` | Vytvoří popisek a automatické číslování. |
-| `\label{fig:...}` | Přidá identifikátor pro budoucí odkazy. |
+| Příkaz / prostředí      | K čemu slouží                                    |
+| ----------------------- | ------------------------------------------------ |
+| `\usepackage{graphicx}` | Načte podporu pro vkládání obrázků.              |
+| `\includegraphics{...}` | Vloží obrázek.                                   |
+| `width=0.8\textwidth`   | Nastaví šířku na 80 % šířky textu.               |
+| `\begin{figure}[htbp]`  | Vytvoří plovoucí objekt s preferencemi umístění. |
+| `\centering`            | Vystředí obsah obrázku.                          |
+| `\caption{...}`         | Vytvoří popisek a automatické číslování.         |
+| `\label{fig:...}`       | Přidá identifikátor pro budoucí odkazy.          |
 
 ### Časté chyby
 
@@ -254,7 +254,7 @@ pandoc main.tex --from=latex --number-sections -o build/main.docx --citeproc --b
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Dílčí řešení úkolů 01–09 najdeš v [checkpointech](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)
 
@@ -281,7 +281,7 @@ Vyber jeden z obrázků a změň jeho parametr umístění z `[htbp]` na `[H]`:
 ```latex
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/images/galaxy-types.png}
+    \includegraphics[width=0.8\textwidth]{figures/images/galaxy-types.jpg}
     \caption{Classification of galaxies}
     \label{fig:galaxy-types}
 \end{figure}
@@ -291,14 +291,14 @@ Vyber jeden z obrázků a změň jeho parametr umístění z `[htbp]` na `[H]`:
 
 Zkompiluj dokument pomocí LaTeX Workshop a porovnej chování obrázku při použití `[htbp]` a `[H]`.
 
-| Parametr | Význam |
-|---|---|
-| `h` | Here – pokud možno na aktuálním místě. |
-| `t` | Top – v horní části stránky. |
-| `b` | Bottom – ve spodní části stránky. |
-| `p` | Page – na samostatné stránce pro plovoucí objekty. |
-| `!` | Uvolní některá omezení pro umístění obrázku. |
-| `H` | Here exactly – zabrání běžnému automatickému přesouvání obrázku. |
+| Parametr | Význam                                                           |
+| -------- | ---------------------------------------------------------------- |
+| `h`      | Here – pokud možno na aktuálním místě.                           |
+| `t`      | Top – v horní části stránky.                                     |
+| `b`      | Bottom – ve spodní části stránky.                                |
+| `p`      | Page – na samostatné stránce pro plovoucí objekty.               |
+| `!`      | Uvolní některá omezení pro umístění obrázku.                     |
+| `H`      | Here exactly – zabrání běžnému automatickému přesouvání obrázku. |
 
 **Pozor:** Ani `[H]` nedokáže umístit obrázek na stránku, pokud na ní není dostatek prostoru. V takovém případě se obrázek přesune na následující stránku.
 

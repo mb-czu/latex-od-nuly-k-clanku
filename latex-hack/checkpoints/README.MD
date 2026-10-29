@@ -1,4 +1,4 @@
-# Challanges
+# Challenges
 ## Řešení 01
 [Řešení](/latex-hack/checkpoints/01/)
 

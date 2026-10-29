@@ -24,7 +24,7 @@ Po dokončení tohoto Challenge budeš umět:
 
 Navazuješ na **Challenge 03**. Projekt už obsahuje soubor `main.tex` a jednotlivé sekce v adresáři `chapters/`.
 
-Pokračuj ve vlastním `project/` po Challenge 03; dílčí checkpointy zatím nejsou publikované.
+Pokračuj ve vlastním `project/` po Challenge 03; stav pro porovnání najdeš v [checkpointu 03](../checkpoints/03/).
 
 > **Pozor:** Bibliografické záznamy uvedené níže jsou výukové příklady vycházející ze skutečných publikací. Při psaní vlastního článku vždy ověř přesnost metadat a cituj jen zdroje, které jsi skutečně použil.
 
@@ -32,19 +32,19 @@ Pokračuj ve vlastním `project/` po Challenge 03; dílčí checkpointy zatím n
 
 ### Úkol 1: Přidej původní zdroje do Zotera
 
-Vytvoř v Zoteru kolekci `Exploring the Universe`. Podle [seznamu původních zdrojů](../ZDROJE.md) přidej Hawkingovu knihu (1988), druhé vydání Carrolla a Ostlieho (2007) a článek EHT (2019). Použij uvedené ISBN/DOI přes **Přidat položku podle identifikátoru**, případně Zotero Connector na stránce publikace. Zkontroluj autory, vydání, rok a typ položky.
+Vytvoř v Zoteru kolekci `Exploring the Universe`. Podle [seznamu původních zdrojů](../přílohy/ZDROJE.MD) přidej Hawkingovu knihu (1988), druhé vydání Carrolla a Ostlieho (2007) a článek EHT (2019). Použij uvedené ISBN/DOI přes **Přidat položku podle identifikátoru**, případně Zotero Connector na stránce publikace. Zkontroluj autory, vydání, rok a typ položky.
 
-V poli **Extra** každé položky nastav pevný klíč samostatným řádkem:
+V Zotero 8 nastav u každé položky v poli **Citation Key / Citační klíč** hodnotu `hawking1988`, `carroll2007` nebo `eventhorizon2019` podle zdroje. Ve starším Zotero 7 s kompatibilním Better BibTeX se klíč nastavuje v poli **Extra** samostatným řádkem:
 
 ```text
 Citation Key: hawking1988
 ```
 
-U dalších dvou položek použij `Citation Key: carroll2007` a `Citation Key: eventhorizon2019`. Každý řádek patří k odpovídající položce, nikoliv všechny k jedné. Neměň kvůli ukázkovému klíči rok skutečného vydání.
+Ve starší variantě použij u dalších dvou položek `Citation Key: carroll2007` a `Citation Key: eventhorizon2019`. Každý klíč patří k odpovídající položce. Neměň kvůli ukázkovému klíči rok skutečného vydání.
 
 ### Úkol 2: Vytvoř references.bib automatickým exportem
 
-Na kolekci klikni pravým tlačítkem → **Exportovat kolekci** → formát **Better BibLaTeX** → **Keep updated**. Ulož ji jako `project/references.bib` a **nahraď** dosud prázdný soubor. Podrobnosti jsou v [návodu Zotero](../../docs/02-zotero-better-bibtex.md).
+Na kolekci klikni pravým tlačítkem → **Exportovat kolekci** → formát **Better BibLaTeX** → **Keep updated**. Ulož ji jako `project/references.bib` a **nahraď** dosud prázdný soubor. Podrobnosti jsou v [návodu Zotero](../../instalace-latex/03-zotero-better-bibtex.md).
 
 Otevři export a ověř právě tři záznamy s klíči `hawking1988`, `carroll2007`, `eventhorizon2019`. Metadata upravuj v Zoteru, nikoliv v automaticky generovaném `.bib`, který další export přepíše. Referenční `.bib` v `solution/` slouží ke kontrole a k sestavení vzorového článku; nenahrazuje tento úkol.
 
@@ -173,9 +173,9 @@ Spusť sestavení PDF přes LaTeX Workshop a export Wordu přes Pandoc. V přík
 - pořadí a formát bibliografických údajů,
 - způsob označování jednotlivých zdrojů.
 
-| Styl | Typické průběžné citace | Charakteristika |
-|---|---|---|
-| APA | Autor a rok | Častý v sociálních a behaviorálních vědách. |
+| Styl | Typické průběžné citace     | Charakteristika                               |
+| ---- | --------------------------- | --------------------------------------------- |
+| APA  | Autor a rok                 | Častý v sociálních a behaviorálních vědách.   |
 | IEEE | Číselné odkazy, např. `[1]` | Častý v technických a informatických oborech. |
 
 **Pozor:** Styl IEEE je číselný; příkaz `\textcite` v něm nebude vypadat stejně jako v APA. Porovnej také, zda věta zůstává přirozeně čitelná.
@@ -184,15 +184,15 @@ Po experimentu **vrať styl na `apa`, přepínač Pandocu na `--csl=styles/apa.c
 
 ## Nápověda: Přehled příkazů
 
-| Příkaz | Význam |
-|---|---|
-| `\usepackage[backend=biber,style=apa]{biblatex}` | Načte BibLaTeX s Biberem a stylem APA. |
-| `\addbibresource{references.bib}` | Připojí bibliografickou databázi. |
-| `\parencite{klíč}` | Vloží citaci v závorce. |
-| `\textcite{klíč}` | Vloží textovou citaci jako součást věty. |
-| `\parencite{klíč1,klíč2}` | Vloží společnou citaci více zdrojů. |
-| `\printbibliography` | Vytvoří seznam použité literatury. |
-| `\nocite{*}` | Zahrne do bibliografie všechny záznamy z databáze. |
+| Příkaz                                           | Význam                                             |
+| ------------------------------------------------ | -------------------------------------------------- |
+| `\usepackage[backend=biber,style=apa]{biblatex}` | Načte BibLaTeX s Biberem a stylem APA.             |
+| `\addbibresource{references.bib}`                | Připojí bibliografickou databázi.                  |
+| `\parencite{klíč}`                               | Vloží citaci v závorce.                            |
+| `\textcite{klíč}`                                | Vloží textovou citaci jako součást věty.           |
+| `\parencite{klíč1,klíč2}`                        | Vloží společnou citaci více zdrojů.                |
+| `\printbibliography`                             | Vytvoří seznam použité literatury.                 |
+| `\nocite{*}`                                     | Zahrne do bibliografie všechny záznamy z databáze. |
 
 ## Sestavení do PDF a Wordu
 
@@ -203,7 +203,7 @@ Po experimentu **vrať styl na `apa`, přepínač Pandocu na `--csl=styles/apa.c
 pandoc main.tex --from=latex --number-sections -o build/main.docx --citeproc --bibliography=references.bib --csl=styles/apa.csl
 ```
 
-3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
+3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../přílohy/BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
 
 ## Kontrola výsledku
 
@@ -225,6 +225,6 @@ Challenge je dokončený, pokud:
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Dílčí řešení úkolů 01–09 najdeš v [checkpointech](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)

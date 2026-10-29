@@ -56,11 +56,11 @@ Betelgeuse & Red supergiant & 16.5 \\
 
 **Jak zápis funguje:**
 
-| Zápis | Význam |
-|---|---|
-| `{lcr}` | Tři sloupce: zarovnání vlevo, na střed a vpravo. |
-| `&` | Odděluje jednotlivé buňky v řádku. |
-| `\\` | Ukončuje řádek tabulky. |
+| Zápis     | Význam                                                                       |
+| --------- | ---------------------------------------------------------------------------- |
+| `{lcr}`   | Tři sloupce: zarovnání vlevo, na střed a vpravo.                             |
+| `&`       | Odděluje jednotlivé buňky v řádku.                                           |
+| `\\`      | Ukončuje řádek tabulky.                                                      |
 | `tabular` | Sází samotnou mřížku buněk; automaticky nevytváří popisek ani číslo tabulky. |
 
 **Ověření:** Zkompiluj dokument pomocí LaTeX Workshop a ověř, že jsou hodnoty ve třech sloupcích. Uvedené hmotnosti jsou pouze orientační výukové hodnoty, nikoli přesný vědecký datový soubor.
@@ -118,11 +118,11 @@ V tabulce použij:
 \end{table}
 ```
 
-| Příkaz | Význam |
-|---|---|
-| `\toprule` | Horní linka tabulky. |
-| `\midrule` | Linka mezi záhlavím a daty. |
-| `\bottomrule` | Spodní linka tabulky. |
+| Příkaz        | Význam                      |
+| ------------- | --------------------------- |
+| `\toprule`    | Horní linka tabulky.        |
+| `\midrule`    | Linka mezi záhlavím a daty. |
+| `\bottomrule` | Spodní linka tabulky.       |
 
 **Ověření:** Tabulka je čitelná bez svislých linek a záhlaví je jasně oddělené od dat.
 
@@ -172,11 +172,11 @@ Its effective surface temperature is about
 \qty{5772}{\kelvin}.
 ```
 
-| Příkaz | Účel |
-|---|---|
-| `\num{1.989e30}` | Vysází číslo ve vědeckém zápisu. |
-| `\unit{\kilogram}` | Vysází samostatnou jednotku. |
-| `\qty{5772}{\kelvin}` | Vysází hodnotu včetně jednotky. |
+| Příkaz                | Účel                             |
+| --------------------- | -------------------------------- |
+| `\num{1.989e30}`      | Vysází číslo ve vědeckém zápisu. |
+| `\unit{\kilogram}`    | Vysází samostatnou jednotku.     |
+| `\qty{5772}{\kelvin}` | Vysází hodnotu včetně jednotky.  |
 
 **Poznámka:** Používáme syntaxi moderního `siunitx` verze 3. Pokud příkaz `\qty` nefunguje, ověř aktualizaci své distribuce LaTeXu.
 
@@ -234,20 +234,20 @@ V PDF ověř dvě očíslované tabulky a funkční odkazy. Ve Wordu ověř dvě
 
 ## Nápověda
 
-| Příkaz nebo prostředí | Význam |
-|---|---|
-| `table` | Plovoucí prostředí pro tabulku s popiskem a číslováním. |
-| `tabular` | Struktura buněk, řádků a sloupců. |
-| `l`, `c`, `r` | Zarovnání textu vlevo, na střed a vpravo. |
-| `&` | Oddělovač sloupců. |
-| `\\` | Konec řádku. |
-| `\centering` | Vodorovné vycentrování tabulky. |
-| `\caption{}` | Popisek tabulky. |
-| `\label{}` | Identifikátor pro odkazy. |
-| `\ref{}` | Vložení čísla odkazovaného objektu. |
-| `\toprule`, `\midrule`, `\bottomrule` | Linky z balíčku `booktabs`. |
-| `S` | Číselný sloupec z `siunitx`. |
-| `\num{}`, `\unit{}`, `\qty{}{}` | Formátování čísel a fyzikálních jednotek. |
+| Příkaz nebo prostředí                 | Význam                                                  |
+| ------------------------------------- | ------------------------------------------------------- |
+| `table`                               | Plovoucí prostředí pro tabulku s popiskem a číslováním. |
+| `tabular`                             | Struktura buněk, řádků a sloupců.                       |
+| `l`, `c`, `r`                         | Zarovnání textu vlevo, na střed a vpravo.               |
+| `&`                                   | Oddělovač sloupců.                                      |
+| `\\`                                  | Konec řádku.                                            |
+| `\centering`                          | Vodorovné vycentrování tabulky.                         |
+| `\caption{}`                          | Popisek tabulky.                                        |
+| `\label{}`                            | Identifikátor pro odkazy.                               |
+| `\ref{}`                              | Vložení čísla odkazovaného objektu.                     |
+| `\toprule`, `\midrule`, `\bottomrule` | Linky z balíčku `booktabs`.                             |
+| `S`                                   | Číselný sloupec z `siunitx`.                            |
+| `\num{}`, `\unit{}`, `\qty{}{}`       | Formátování čísel a fyzikálních jednotek.               |
 
 ## Sestavení do PDF a Wordu
 
@@ -258,7 +258,7 @@ V PDF ověř dvě očíslované tabulky a funkční odkazy. Ve Wordu ověř dvě
 pandoc main.tex --from=latex --number-sections -o build/main.docx --citeproc --bibliography=references.bib --csl=styles/apa.csl
 ```
 
-3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
+3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../přílohy/BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
 
 ## Kontrola výsledku
 
@@ -276,6 +276,6 @@ pandoc main.tex --from=latex --number-sections -o build/main.docx --citeproc --b
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Dílčí řešení úkolů 01–09 najdeš v [checkpointech](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)

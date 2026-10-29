@@ -140,7 +140,7 @@ Prohlédni si všechny obrázky a tabulky ve výsledném PDF.
 ```latex
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/images/galaxy-types.png}
+    \includegraphics[width=0.8\textwidth]{figures/images/galaxy-types.jpg}
     \caption{Classification of galaxies}
     \label{fig:galaxy-types}
 \end{figure}
@@ -217,13 +217,13 @@ Ve VS Code otevři `main.tex` a použij LaTeX Workshop:
 
 **Rozlišuj chyby a varování:**
 
-| Zpráva | Co prověřit |
-|---|---|
-| `Undefined control sequence` | Překlep v příkazu nebo chybějící balíček. |
-| `Citation ... undefined` | Citační klíč, `references.bib` a běh Biberu. |
-| `Reference ... undefined` | Chybějící nebo chybný `\label`, případně nutnost opakované kompilace. |
-| `Overfull \\hbox` | Text, tabulka nebo rovnice přesahující dostupnou šířku. |
-| `File ... not found` | Nesprávná cesta k obrázku nebo vloženému souboru. |
+| Zpráva                       | Co prověřit                                                           |
+| ---------------------------- | --------------------------------------------------------------------- |
+| `Undefined control sequence` | Překlep v příkazu nebo chybějící balíček.                             |
+| `Citation ... undefined`     | Citační klíč, `references.bib` a běh Biberu.                          |
+| `Reference ... undefined`    | Chybějící nebo chybný `\label`, případně nutnost opakované kompilace. |
+| `Overfull \\hbox`            | Text, tabulka nebo rovnice přesahující dostupnou šířku.               |
+| `File ... not found`         | Nesprávná cesta k obrázku nebo vloženému souboru.                     |
 
 Ne každé varování znamená nefunkční dokument. U finálního článku ale musíš rozumět všem zbývajícím relevantním upozorněním a ověřit, že nemají negativní dopad na výstup.
 
@@ -235,7 +235,7 @@ PDF sestav přes LaTeX Workshop jako dosud. Pro Word otevři terminál v `projec
 pandoc main.tex --from=latex --number-sections --citeproc --bibliography=references.bib --csl=styles/apa.csl --toc --toc-depth=1 -o build/main.docx
 ```
 
-Pokud používáš vlastní šablonu Wordu, přidej `--reference-doc=styles/reference.docx`. Složky `build/` a `styles/` a soubor `apa.csl` už máš z předchozích úkolů. Podrobnosti jsou ve [společném návodu](../BUILD.md).
+Pokud používáš vlastní šablonu Wordu, přidej `--reference-doc=styles/reference.docx`. Složky `build/` a `styles/` a soubor `apa.csl` už máš z předchozích úkolů. Podrobnosti jsou ve [společném návodu](../přílohy/BUILD.md).
 
 Otevři PDF i DOCX a projdi je stránku po stránce. Ve Wordu aktualizuj obsah a podle Challenge 08 dokonči číslované popisky, čísla rovnic a křížové odkazy. Odstraň nevyřešené značky typu `[eq:schwarzschild-radius]`. Zkontroluj sekce, odstavce, citace, bibliografii, oba obrázky, obě tabulky, jednotky, rovnice, poznámku pod čarou, uvozovky a vlastní makra.
 
@@ -273,21 +273,21 @@ Do `README.MD` napiš potřebné nástroje, sestavení PDF přes LaTeX Workshop,
 
 ## Nápověda
 
-| Příkaz / nástroj | K čemu slouží |
-|---|---|
-| `\input{...}` | Vkládá obsah samostatných souborů. |
-| `\printbibliography` | Vypíše bibliografii spravovanou BibLaTeXem. |
-| `\label{...}` | Vytváří identifikátor sekce, obrázku, tabulky nebo rovnice. |
-| `\ref{...}` | Vypíše číslo odkazovaného objektu. |
-| `\cref{...}` | Vytvoří kontextový odkaz, například *Figure 1*. |
-| `\eqref{...}` | Vypíše číslo rovnice v závorkách. |
-| `\caption{...}` | Přidává popisek obrázku nebo tabulky. |
-| `\todo{...}` | Pracovní poznámka, pokud je načten `todonotes`. |
-| LaTeX Workshop | Sestavení a zobrazení výsledného PDF ve VS Code. |
-| Biber | Zpracování bibliografických dat pro BibLaTeX. |
-| Pandoc | Export LaTeXového dokumentu do Wordu. |
-| CSL | Definice citačního stylu pro Pandoc. |
-| `--citeproc` | Zpracování citací při exportu přes Pandoc. |
+| Příkaz / nástroj     | K čemu slouží                                               |
+| -------------------- | ----------------------------------------------------------- |
+| `\input{...}`        | Vkládá obsah samostatných souborů.                          |
+| `\printbibliography` | Vypíše bibliografii spravovanou BibLaTeXem.                 |
+| `\label{...}`        | Vytváří identifikátor sekce, obrázku, tabulky nebo rovnice. |
+| `\ref{...}`          | Vypíše číslo odkazovaného objektu.                          |
+| `\cref{...}`         | Vytvoří kontextový odkaz, například *Figure 1*.             |
+| `\eqref{...}`        | Vypíše číslo rovnice v závorkách.                           |
+| `\caption{...}`      | Přidává popisek obrázku nebo tabulky.                       |
+| `\todo{...}`         | Pracovní poznámka, pokud je načten `todonotes`.             |
+| LaTeX Workshop       | Sestavení a zobrazení výsledného PDF ve VS Code.            |
+| Biber                | Zpracování bibliografických dat pro BibLaTeX.               |
+| Pandoc               | Export LaTeXového dokumentu do Wordu.                       |
+| CSL                  | Definice citačního stylu pro Pandoc.                        |
+| `--citeproc`         | Zpracování citací při exportu přes Pandoc.                  |
 
 ## Sestavení do PDF a Wordu
 
@@ -298,7 +298,7 @@ Do `README.MD` napiš potřebné nástroje, sestavení PDF přes LaTeX Workshop,
 pandoc main.tex --from=latex --number-sections -o build/main.docx --citeproc --bibliography=references.bib --csl=styles/apa.csl --toc --toc-depth=1
 ```
 
-3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
+3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../přílohy/BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
 
 ## Kontrola výsledku
 
@@ -321,7 +321,7 @@ Challenge je dokončený, pokud:
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
+Konečný článek pro porovnání je v [`solution/`](../solution/). Challenge 10 nemá samostatné dílčí řešení; dokonči kontrolu vlastního projektu podle zadání.
 
 ## Dokončení LaTeX Hacku
 

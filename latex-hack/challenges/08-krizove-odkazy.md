@@ -63,7 +63,7 @@ Najdi obrázek typů galaxií z Challenge 05. Ujisti se, že obsahuje `\label` *
 ```latex
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/images/galaxy-types.png}
+    \includegraphics[width=0.8\textwidth]{figures/images/galaxy-types.jpg}
     \caption{Major galaxy morphologies: spiral, elliptical, and irregular.}
     \label{fig:galaxy-types}
 \end{figure}
@@ -122,10 +122,10 @@ Příkaz `\eqref` z balíčku `amsmath` vrací číslo rovnice **v kulatých zá
 
 Porovnej:
 
-| Příkaz | Typický výsledek |
-|---|---|
-| `\ref{eq:schwarzschild-radius}` | `1` |
-| `\eqref{eq:schwarzschild-radius}` | `(1)` |
+| Příkaz                            | Typický výsledek |
+| --------------------------------- | ---------------- |
+| `\ref{eq:schwarzschild-radius}`   | `1`              |
+| `\eqref{eq:schwarzschild-radius}` | `(1)`            |
 
 *Konkrétní číslo závisí na pořadí rovnic v dokumentu.*
 
@@ -144,12 +144,12 @@ The event horizon is related to \cref{eq:schwarzschild-radius}.
 
 Porovnej následující přístupy:
 
-| Zápis | Typický výsledek |
-|---|---|
-| `Figure~\ref{fig:galaxy-types}` | Figure 1 |
-| `\cref{fig:galaxy-types}` | Figure 1 |
-| `\cref{tab:stellar-properties}` | Table 1 |
-| `\cref{eq:schwarzschild-radius}` | Equation (1) |
+| Zápis                            | Typický výsledek |
+| -------------------------------- | ---------------- |
+| `Figure~\ref{fig:galaxy-types}`  | Figure 1         |
+| `\cref{fig:galaxy-types}`        | Figure 1         |
+| `\cref{tab:stellar-properties}`  | Table 1          |
+| `\cref{eq:schwarzschild-radius}` | Equation (1)     |
 
 Protože jsme nastavili `capitalise`, používá `\cref` velká počáteční písmena. Příkaz `\Cref` lze využít také, zejména pokud v budoucnu tuto volbu změníš.
 
@@ -203,12 +203,12 @@ To je ruční dokončení přímo ve Wordu, bez dalších nástrojů. Ze samotn�
 
 ### Doporučené názvy identifikátorů
 
-| Typ objektu | Prefix | Příklad |
-|---|---|---|
-| Sekce | `sec:` | `\label{sec:black-holes}` |
-| Obrázek | `fig:` | `\label{fig:galaxy-types}` |
-| Tabulka | `tab:` | `\label{tab:stellar-properties}` |
-| Rovnice | `eq:` | `\label{eq:schwarzschild-radius}` |
+| Typ objektu | Prefix | Příklad                           |
+| ----------- | ------ | --------------------------------- |
+| Sekce       | `sec:` | `\label{sec:black-holes}`         |
+| Obrázek     | `fig:` | `\label{fig:galaxy-types}`        |
+| Tabulka     | `tab:` | `\label{tab:stellar-properties}`  |
+| Rovnice     | `eq:`  | `\label{eq:schwarzschild-radius}` |
 
 Prefixy nejsou povinné, ale výrazně usnadňují orientaci ve větším projektu. **Každý identifikátor musí být v dokumentu jedinečný.**
 
@@ -231,12 +231,12 @@ LaTeX ukládá informace o odkazech do pomocných souborů. Při běžném sesta
 
 ### `\ref`, `\eqref` a `\cref` – rychlé srovnání
 
-| Příkaz | Kdy jej použít |
-|---|---|
-| `\ref{...}` | Potřebuješ samotné číslo sekce, obrázku nebo tabulky. |
-| `\eqref{...}` | Potřebuješ číslo rovnice v závorkách. |
-| `\cref{...}` | Chceš automaticky doplnit také typ objektu. |
-| `\Cref{...}` | Chceš variantu s velkým počátečním písmenem, zejména na začátku věty. |
+| Příkaz        | Kdy jej použít                                                        |
+| ------------- | --------------------------------------------------------------------- |
+| `\ref{...}`   | Potřebuješ samotné číslo sekce, obrázku nebo tabulky.                 |
+| `\eqref{...}` | Potřebuješ číslo rovnice v závorkách.                                 |
+| `\cref{...}`  | Chceš automaticky doplnit také typ objektu.                           |
+| `\Cref{...}`  | Chceš variantu s velkým počátečním písmenem, zejména na začátku věty. |
 
 ## Sestavení do PDF a Wordu
 
@@ -247,7 +247,7 @@ LaTeX ukládá informace o odkazech do pomocných souborů. Při běžném sesta
 pandoc main.tex --from=latex --number-sections -o build/main.docx --citeproc --bibliography=references.bib --csl=styles/apa.csl
 ```
 
-3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
+3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../přílohy/BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
 
 ## Kontrola výsledku
 
@@ -265,6 +265,6 @@ pandoc main.tex --from=latex --number-sections -o build/main.docx --citeproc --b
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Dílčí řešení úkolů 01–09 najdeš v [checkpointech](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)

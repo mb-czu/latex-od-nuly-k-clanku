@@ -19,7 +19,7 @@ V terminálu otevřeném v `project/`, kde je `main.tex`, spusť pro Challenge 0
 pandoc main.tex --from=latex --number-sections -o build/main.docx
 ```
 
-Od Challenge 04 zkopíruj `apa.csl` a `ieee.csl` z `latex-hack/styles/` do vlastní složky `project/styles/`. Používej:
+Od Challenge 04 zkopíruj `apa.csl` a `ieee.csl` z `latex-hack/přílohy/styles` do vlastní složky `project/styles/`. Používej:
 
 ```bash
 pandoc main.tex --from=latex --number-sections --citeproc --bibliography=references.bib --csl=styles/apa.csl -o build/main.docx
