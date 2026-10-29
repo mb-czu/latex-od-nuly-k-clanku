@@ -24,7 +24,7 @@ Po dokončení Challenge budeš umět:
 
 Pokračuj v projektu z Challenge 04. Dokument má hlavní soubor `main.tex`, kapitoly v `chapters/` a funkční bibliografii.
 
-Zkopíruj soubory `galaxy-types.png` a `black-hole-diagram.png` z `latex-hack/solution/figures/images/` do `project/figures/images/`. Obsah řešení přitom nekopíruj. Obrázky v `attachments/` mají jiné názvy a nejsou vstupem těchto ukázek.
+Zkopíruj soubory `galaxy-types.png` a `black-hole-diagram.png` z `latex-hack/přílohy/figures/obrazky/` do `project/figures/images/`. Obsah řešení přitom nekopíruj. Obrázky v `attachments/` mají jiné názvy a nejsou vstupem těchto ukázek.
 
 > Vždy pokračuj ve vlastním `project/`; `solution/` slouží ke srovnání.
 
@@ -236,7 +236,7 @@ V DOCX zkontroluj oba obrázky a věcné popisky. Automatická čísla z PDF se 
 pandoc main.tex --from=latex --number-sections -o build/main.docx --citeproc --bibliography=references.bib --csl=styles/apa.csl
 ```
 
-3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
+3. Otevři `build/main.docx` v MS Wordu a porovnej jej s PDF. Zkontroluj všechny změny z tohoto úkolu podle [kontroly exportu](../přílohy/BUILD.md). Složku `build/` vytvoř před prvním exportem. Cesta k PDF závisí na nastavení LaTeX Workshop.
 
 ## Kontrola výsledku
 
