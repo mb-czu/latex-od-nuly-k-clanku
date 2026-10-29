@@ -59,3 +59,11 @@ Původní publikace pro cvičení, jejich ISBN/DOI a citační klíče najdeš v
 
 > [!WARNING]
 > Veškeré materiály v rámci LaTeX Hacku slouží výhradně k výukovým účelům. Uvedené odborné texty, číselné údaje, tabulky a ilustrace mají především demonstrační charakter a nemusí odpovídat aktuálním vědeckým poznatkům či přesným naměřeným hodnotám. Materiály proto nepovažujte za ověřený vědecký zdroj a nepoužívejte je jako podklad pro odborné závěry bez dalšího ověření.
+
+# Autor
+**Matěj Brnka**  
+[brnka@pef.czu.cz](mailto:brnka@pef.czu.cz)
+
+Materiály vznikly s pomocí nástrojů AI. Za jejich výslednou podobu a obsah odpovídá autor.
+
+Našli jste chybu nebo máte návrh na zlepšení? Napište mi na uvedený e-mail.
