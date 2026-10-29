@@ -6,7 +6,7 @@ V deseti navazujících úkolech vytvoříš anglický výukový článek **Expl
 
 | Challenge | Zadání | Nové dovednosti | Řešení |
 |---|---|---|---|
-| 01 | [Struktura projektu](challenges/01-project-structure.md) | Adresáře, minimální funkční dokument, `csquotes`, první PDF a Word. | Řešení challange 01 |
+| 01 | [Struktura projektu](challenges/01-project-structure.md) | Adresáře, minimální funkční dokument, `csquotes`, první PDF a Word. | [Řešení challange 01](./checkpoints/01/) |
 | 02 | [První článek](challenges/02-first-paper.md) | Titul, autor, datum, první sekce a odstavec. |Řešení challange 02 |
 | 03 | [Struktura a formátování](challenges/03-text-formatting.md) | `\input`, abstrakt, sekce, seznamy a speciální znaky. | Řešení challange 03 |
 | 04 | [Citace a bibliografie](challenges/04-citations.md) | Původní publikace → Zotero → Better BibLaTeX → Biber a citeproc. | Řešení challange 04 |
