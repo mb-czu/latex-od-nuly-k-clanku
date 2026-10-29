@@ -1,0 +1,55 @@
+\documentclass[11pt]{article}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage[backend=biber, style=ieee]{biblatex}
+\usepackage[hidelinks]{hyperref}
+
+\addbibresource{references.bib} % importuje soubor se seznamem literatury
+
+\title{A Minimal Academic Paper} % title článku, vypíše se pomocí maketitle
+\author{Matěj Brnka} % jméno autora, vypíše se pomocí maketitle
+
+\begin{document} % zahahuje dokument
+
+\maketitle % vypíše nadpis, autora a datum
+
+\begin{abstract} % začátek abstraktu
+The universe has fascinated humanity for centuries, inspiring
+scientific discoveries and fundamental questions about the nature
+of space, time, matter, and energy. From the formation of the
+earliest galaxies to the mysterious behavior of black holes,
+modern astrophysics seeks to explain the physical processes
+that govern the evolution of the cosmos. Advances in observational
+astronomy, theoretical physics, and computational modeling have
+significantly expanded our understanding of the universe,
+revealing phenomena that challenge conventional interpretations
+of physical reality. % samotný abstrakt
+\end{abstract} % ukončení abstraktu
+
+
+\noindent\textbf{Keywords:} sit, amet, consectetur, adipiscing
+
+% \tableofcontents % vypíše obsah, pro použítí smazat % na začátku řádku
+% \newpage % zalomení stránky, pro použítí smazat % na začátku řádku
+
+\section{Introduction}
+
+The universe is a vast and dynamic system containing billions
+of galaxies, each composed of stars, planets, and interstellar
+matter. One of the most fascinating predictions of Einstein's
+theory of general relativity is the existence of black holes,
+regions of spacetime where gravity is so strong that even
+light cannot escape.
+
+In 2019, the Event Horizon Telescope collaboration presented
+the first direct image of a black hole's shadow in the galaxy
+Messier 87, providing compelling observational evidence for
+the predictions of general relativity
+\parencite{eventhorizon2019}.
+
+\printbibliography % výpis použité literatury
+
+\end{document} % ukončení dokumentu
