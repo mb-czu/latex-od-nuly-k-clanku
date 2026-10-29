@@ -10,3 +10,6 @@
 
 ## Řešení 04
 [Řešení](/latex-hack/checkpoints/04/)
+
+## Řešení 05
+[Řešení](/latex-hack/checkpoints/05/)
