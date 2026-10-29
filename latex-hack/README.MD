@@ -9,9 +9,9 @@ V deseti navazujících úkolech vytvoříš anglický výukový článek **Expl
 | 01 | [Struktura projektu](challenges/01-struktura-projektu.md) | Adresáře, minimální funkční dokument, `csquotes`, první PDF a Word. | [Řešení challange 01](./checkpoints/01/) |
 | 02 | [První kostra článku](challenges/02-prvni-kostra-clanku.md) | Titul, autor, datum, první sekce a odstavec. |[Řešení challange 02](/latex-hack/checkpoints/02/) |
 | 03 | [Struktura a formátování](challenges/03-formatovani-textu.md) | `\input`, abstrakt, sekce, seznamy a speciální znaky. | [Řešení challange 03](./checkpoints/03/) |
-| 04 | [Citace a bibliografie](challenges/04-citace.md) | Původní publikace → Zotero → Better BibLaTeX → Biber a citeproc. | Řešení challange 04 |
-| 05 | [Obrázky a ilustrace](challenges/05-obrazky-a-ilustrace.md) | PNG, rozměry, popisky a identifikátory. | Řešení challange 05 |
-| 06 | [Tabulky a číselné údaje](challenges/06-tabulky-a-ciselne-udaje.md) | `booktabs`, `siunitx`, dvě samostatné tabulky. | Řešení challange 06 |
+| 04 | [Citace a bibliografie](challenges/04-citace.md) | Původní publikace → Zotero → Better BibLaTeX → Biber a citeproc. | [Řešení challange 04](./checkpoints/04/) |
+| 05 | [Obrázky a ilustrace](challenges/05-obrazky-a-ilustrace.md) | PNG, rozměry, popisky a identifikátory. | [Řešení challange 05](./checkpoints/05/) |
+| 06 | [Tabulky a číselné údaje](challenges/06-tabulky-a-ciselne-udaje.md) | `booktabs`, `siunitx`, dvě samostatné tabulky. | Řešení challange 06](./checkpoints/06/) |
 | 07 | [Matematické rovnice](challenges/07-rovnice.md) | Matematické režimy, `equation`, `align`, identifikátory. | Řešení challange 07 |
 | 08 | [Křížové odkazy](challenges/08-krizove-odkazy.md) | `\ref`, `\eqref`, `\cref`, číslování a klikatelnost. | Řešení challange 08 |
 | 09 | [Pokročilé funkce](challenges/09-pokrocile-funkce.md) | Poznámky pod čarou, uvozovky, makra, TODO experiment a jeden obsah. | Řešení challange 09 |

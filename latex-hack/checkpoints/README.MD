@@ -13,3 +13,6 @@
 
 ## Řešení 05
 [Řešení](/latex-hack/checkpoints/05/)
+
+## Řešení 06
+[Řešení](/latex-hack/checkpoints/06/)
