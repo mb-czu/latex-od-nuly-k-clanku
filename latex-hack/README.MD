@@ -11,8 +11,8 @@ V deseti navazujících úkolech vytvoříš anglický výukový článek **Expl
 | 03 | [Struktura a formátování](challenges/03-formatovani-textu.md) | `\input`, abstrakt, sekce, seznamy a speciální znaky. | [Řešení challange 03](./checkpoints/03/) |
 | 04 | [Citace a bibliografie](challenges/04-citace.md) | Původní publikace → Zotero → Better BibLaTeX → Biber a citeproc. | [Řešení challange 04](./checkpoints/04/) |
 | 05 | [Obrázky a ilustrace](challenges/05-obrazky-a-ilustrace.md) | PNG, rozměry, popisky a identifikátory. | [Řešení challange 05](./checkpoints/05/) |
-| 06 | [Tabulky a číselné údaje](challenges/06-tabulky-a-ciselne-udaje.md) | `booktabs`, `siunitx`, dvě samostatné tabulky. | Řešení challange 06](./checkpoints/06/) |
-| 07 | [Matematické rovnice](challenges/07-rovnice.md) | Matematické režimy, `equation`, `align`, identifikátory. | Řešení challange 07 |
+| 06 | [Tabulky a číselné údaje](challenges/06-tabulky-a-ciselne-udaje.md) | `booktabs`, `siunitx`, dvě samostatné tabulky. | [Řešení challange 06](./checkpoints/06/) |
+| 07 | [Matematické rovnice](challenges/07-rovnice.md) | Matematické režimy, `equation`, `align`, identifikátory. | [Řešení challange 07](./checkpoints/07/ |
 | 08 | [Křížové odkazy](challenges/08-krizove-odkazy.md) | `\ref`, `\eqref`, `\cref`, číslování a klikatelnost. | Řešení challange 08 |
 | 09 | [Pokročilé funkce](challenges/09-pokrocile-funkce.md) | Poznámky pod čarou, uvozovky, makra, TODO experiment a jeden obsah. | Řešení challange 09 |
 | 10 | [Finální článek](challenges/10-finalni-clanek.md) | Kontrola obou formátů a přenosný projekt. | Řešení challange 10 |
