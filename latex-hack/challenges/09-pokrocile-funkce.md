@@ -275,10 +275,6 @@ Challenge je dokončený, pokud:
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](../DILCI-RESENI.md).
-
-## Další Challenge
-
-V **Challenge 10: Finální vědecký článek** provedeš závěrečnou kontrolu dokumentu, odstraníš pracovní poznámky, ověříš citace, obrázky, tabulky, rovnice i odkazy a připravíš finální PDF a Word.
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)

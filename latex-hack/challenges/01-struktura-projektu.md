@@ -136,8 +136,8 @@ Challenge je dokončený, pokud:
 - [ ] Existují adresáře pro obrázky a tabulky.
 - [ ] Celý projekt můžeš otevřít ve Visual Studio Code.
 
-## Další Challenge
+## Referenční řešení
 
-V **Challenge 02: První vědecký článek** rozšíříš funkční základ v `main.tex` o skutečný úvod. PDF i Word budeš sestavovat a kontrolovat po každém úkolu.
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)

@@ -254,10 +254,6 @@ Challenge je dokončený, pokud:
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](../DILCI-RESENI.md).
-
-## Další Challenge
-
-V **Challenge 08: Křížové odkazy** se naučíš automaticky odkazovat na sekce, obrázky, tabulky a rovnice. Vyzkoušíš si příkazy `\label`, `\ref`, `\eqref` a balíčky pro pohodlnější práci s odkazy.
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)

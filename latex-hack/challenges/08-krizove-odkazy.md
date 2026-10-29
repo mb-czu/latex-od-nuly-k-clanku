@@ -265,10 +265,6 @@ pandoc main.tex --from=latex --number-sections -o build/main.docx --citeproc --b
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](../DILCI-RESENI.md).
-
-## Další Challenge
-
-V **Challenge 09: Pokročilé funkce LaTeXu** se zaměříme na další nástroje pro přípravu odborného textu, například vlastní příkazy, poznámky pod čarou a užitečné typografické prvky.
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)

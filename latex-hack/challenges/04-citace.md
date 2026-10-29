@@ -44,11 +44,11 @@ U dalších dvou položek použij `Citation Key: carroll2007` a `Citation Key: e
 
 ### Úkol 2: Vytvoř references.bib automatickým exportem
 
-Na kolekci klikni pravým tlačítkem → **Exportovat kolekci** → formát **Better BibLaTeX** → **Keep updated**. Ulož ji jako `project/references.bib` a nahraď dosud prázdný soubor. Podrobnosti jsou v [návodu Zotero](../../docs/02-zotero-better-bibtex.md).
+Na kolekci klikni pravým tlačítkem → **Exportovat kolekci** → formát **Better BibLaTeX** → **Keep updated**. Ulož ji jako `project/references.bib` a **nahraď** dosud prázdný soubor. Podrobnosti jsou v [návodu Zotero](../../docs/02-zotero-better-bibtex.md).
 
 Otevři export a ověř právě tři záznamy s klíči `hawking1988`, `carroll2007`, `eventhorizon2019`. Metadata upravuj v Zoteru, nikoliv v automaticky generovaném `.bib`, který další export přepíše. Referenční `.bib` v `solution/` slouží ke kontrole a k sestavení vzorového článku; nenahrazuje tento úkol.
 
-V `project/` vytvoř složku `styles/`. Z `latex-hack/styles/` do ní zkopíruj `apa.csl` a `ieee.csl`; nepřidávají se do preambule, používá je přímo příkaz Pandocu.
+V `project/` vytvoř složku `styles/`. Z `latex-hack/přílohy/styles` do ní zkopíruj `apa.csl` a `ieee.csl`; nepřidávají se do preambule, používá je přímo příkaz Pandocu.
 
 ### Úkol 3: Nastav BibLaTeX v hlavním dokumentu
 
@@ -225,10 +225,6 @@ Challenge je dokončený, pokud:
 
 ## Referenční řešení
 
-Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](../DILCI-RESENI.md).
-
-## Další Challenge
-
-V **Challenge 05: Obrázky a ilustrace** se naučíš vkládat obrázky pomocí `\includegraphics`, nastavovat jejich velikost a umístění a přidávat popisky.
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)

@@ -124,8 +124,8 @@ Challenge je dokončený, pokud:
 - [ ] Úvodní odstavec se správně zobrazuje.
 - [ ] Kompilace přes LaTeX Workshop proběhne bez chyb.
 
-## Další Challenge
+## Referenční řešení
 
-V **Challenge 03: Formátování a struktura odborného textu** začneš článek rozšiřovat o další sekce, podsekce a různé možnosti formátování.
+Konečný článek je v [`solution/`](../solution/). Obsahuje i pozdější úpravy, proto jej nepoužívej jako výchozí stav tohoto úkolu. Návrh samostatných řešení po každém kroku najdeš v [dílčích řešeních](/latex-hack/checkpoints/README.MD).
 
 [Zpět na přehled Hacku](../README.MD)
